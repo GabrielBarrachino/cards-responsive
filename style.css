@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #f6f9ff;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #434343;
+}
+
+.cards{
+    display: flex;
+    padding: 32px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 256px;
+    margin-left: 32px;
+}
+
+h3{
+    margin: 16px 0;
+}
+
+span{
+    font-weight: 300;
+    font-size: 80%;
+    max-width: 240px;
+    margin-bottom: 16px;
+}
+
+.card:first-child{
+    margin-left: 0;
+}
+
+.icon{
+    width: 64px;
+    height: 64px;
+}
+
+.icon img{
+    width: 100%;
+}
+
+.card button{
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: none;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    transition: all .3s;
+}
+
+.card button:hover{
+   transform: scale(1.1);  
+}
+
+.contact{
+    box-shadow: 20px 20px 50px -30px #DBC4FF;
+}
+
+.contact button{
+    background: linear-gradient(to right, #9F66FF, #DFCBFF);
+}
+
+.shop{
+    box-shadow: 20px 20px 50px -30px #AFD6FF;
+}
+
+.shop button{
+    background: linear-gradient(to right, #3E8AFF, #BBDEFF);
+}
+
+.about{
+    box-shadow: 20px 20px 50px -30px #FFC1D5;
+}
+
+.about button{
+    background: linear-gradient(to right, #FE5F8F, #FFC7D9);
+}
+
+
+@media screen and (max-width: 720px) {
+    main.cards {
+        flex-direction: column;
+    }
+
+    main.cards section.card {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    main.cards section.card:last-child {
+        margin-bottom: 0;
+    }
+
+    main.cards section.card button {
+        font-size: 70%;
+    }
+}
